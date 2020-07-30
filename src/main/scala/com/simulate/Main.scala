@@ -41,7 +41,7 @@ object Main {
                         case "sweater" => getSweaterPrice(brand,col,s)
                         case "socks" => getSocksPrice(brand,col,s)
                       }
-                      val csvLine = date+";"+it+";"+brand+";"+col+";"+s+";"+price+"\n"
+                      val csvLine = date+";"+"Server1"+";"+it+";"+brand+";"+col+";"+s+";"+price+"\n"
                       print(csvLine)
                       fileWriter.write(csvLine)
                     }
